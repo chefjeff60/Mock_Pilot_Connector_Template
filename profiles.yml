@@ -1,0 +1,12 @@
+Mock_Pilot_Connector:
+  target: dev
+  outputs:
+
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server' # (The ODBC Driver installed on your system)
+      server: #update with server name
+      port: #1433
+      database: #"ConnectorDB"
+      schema: #"dbo"
+      windows_login: True

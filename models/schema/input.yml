@@ -1,0 +1,15 @@
+version: 2
+
+# Input tests cover the input tables, where we check whether the Queue_Name and CASID are not null
+models:
+  - name: Customer_Data_Input
+    columns:
+      - name: '"Queue_Name"'
+        tests:
+          - not_null
+
+  - name: Invoices_input
+    columns:
+      - name: '"CASID"'
+        tests:
+          - not_null
