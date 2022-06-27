@@ -2,7 +2,10 @@ with Customer_Data_Raw as (
     select * from [jeff_schema].[Process Mining Data.csv]
 ),
 
-/*  */
+/* 
+Load raw customer data from SQL Server into new SQL Table "Customer_Data_Input" 
+Update Required: Convert datatypes from nvarchar to the correct data types
+*/
 Customer_Data_Input as (
     select
         Customer_Data_Raw."Reject Cleared?"
