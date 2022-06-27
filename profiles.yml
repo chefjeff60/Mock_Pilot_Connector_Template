@@ -8,5 +8,5 @@ Mock_Pilot_Connector:
       server: #update with server name
       port: #1433
       database: #"ConnectorDB"
-      schema: #"dbo"
+      schema: #"jeff_schema"
       windows_login: True

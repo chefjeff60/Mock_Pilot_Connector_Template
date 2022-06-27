@@ -10,7 +10,7 @@ profile: 'Mock_Pilot_Connector'
 # Configuration of variables that are used in this dbt project.
 vars:
    # Name of the schema where the raw input data is stored.
-  schema_sources: "dbo"
+  schema_sources: "jeff_schema"
 
 # These configurations specify where dbt should look for different types of files.
 model-paths: ["models"]

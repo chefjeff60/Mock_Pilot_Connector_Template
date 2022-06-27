@@ -1,5 +1,5 @@
-with Customer_Data_Input as (
-    select * from {{ ref('Customer_Data_Input') }}
+with Customer_Data_Raw as (
+    select * from [jeff_schema].[Process Mining Data.csv]
 ),
 
 /* 
@@ -7,8 +7,8 @@ with Customer_Data_Input as (
 */
 Cases as (
     select
-        Customer_Data_Input."OR_ID" + '_' + Customer_Data_Input."Client_Name" as "Case ID"
-    from Customer_Data_Input
+        Customer_Data_Raw."OR ID" + '_' + Customer_Data_Raw."Client Name" as "Case ID"
+    from Customer_Data_Raw
 )
 
-select * from Cases
+select * from Customer_Data_Input
